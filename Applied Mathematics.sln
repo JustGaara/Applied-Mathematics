@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Applied Mathematics", "Applied Mathematics\Applied Mathematics.pyproj", "{7774A65A-AB9F-470D-BCE3-A7E5833E984B}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DotProductMagnitudeCalculator", "DotProductMagnitudeCalculator\DotProductMagnitudeCalculator.pyproj", "{12245157-82E7-4D2A-B4E1-A84949C1BB92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7774A65A-AB9F-470D-BCE3-A7E5833E984B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7774A65A-AB9F-470D-BCE3-A7E5833E984B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12245157-82E7-4D2A-B4E1-A84949C1BB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12245157-82E7-4D2A-B4E1-A84949C1BB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DC88D16-F5E3-4DDE-92BA-1DD5E4E7997B}
+	EndGlobalSection
+EndGlobal
