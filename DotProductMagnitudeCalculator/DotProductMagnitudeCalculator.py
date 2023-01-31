@@ -16,3 +16,4 @@ magnitude2 = math.sqrt(math.pow(int(x2),2) + math.pow(int(y2),2))
 result_magnitude = magnitude1 * magnitude2 * math.cos(int(angle))
 
 print("The result magnitude is", result_magnitude)
+
