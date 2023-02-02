@@ -7,19 +7,12 @@ Choice: """)
 
 angle = input("What is the angle? ")
 
-if choice == 1 : 
-    {
-        math.cos(int(choice))
-    }
-elif choice == 2 :
-    {
-        math.sin(int(choice))
-    }
-elif choice == 3 :
-    {
-        math.tan(int(choice))
-    }
-else {print("Wrong input")}
+#match choice:
+if choice == 1:
+    answer = math.cos(angle * (180/math.pi))
+if choice == 2:
+    answer = math.sin(angle * (180/math.pi))
+if choice == 3:
+    answer = math.tan(angle * (180/math.pi))
 
-print()
-print()
+print (answer)
