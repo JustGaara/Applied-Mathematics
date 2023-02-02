@@ -18,6 +18,19 @@ cz = (ay*bx) - (ax*by)
 
 magnitude_c = math.sqrt( math.pow(cx,2) + math.pow(cy,2) + math.pow(cz,2) )
 
-angle = (math.asin((magnitude_c)/(magnitude_a * magnitude_b))  * (180/math.pi))
+angle_cross = (math.asin((magnitude_c)/(magnitude_a * magnitude_b))  * (180/math.pi))
+angle_dot = (math.acos((magnitude_c)/(magnitude_a * magnitude_b))  * (180/math.pi))
 
-print("The angle is",angle)
+print("The magnitude of vector A is", magnitude_a)
+print("The magnitude of vector B is", magnitude_b)
+print("The magnitude of vector C is", magnitude_c)
+
+print()
+
+print("""--- Cross Product ---
+The angle is""",angle_cross)
+
+print()
+
+print("""--- Dot Product ---
+The angle is""",angle_dot)
