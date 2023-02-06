@@ -6,13 +6,14 @@ choice = input("""1 - Sin
 Choice: """)
 
 angle = input("What is the angle? ")
+radian = int(angle) / (180 / math.pi)
 
-#match choice:
 if choice == 1:
-    answer = math.cos(angle * (180/math.pi))
-if choice == 2:
-    answer = math.sin(angle * (180/math.pi))
-if choice == 3:
-    answer = math.tan(angle * (180/math.pi))
-
-print (answer)
+    answer = math.cos(int(radian))
+    print(answer)
+elif choice == 2:
+    answer = math.sin(int(radian))
+    print(answer)
+elif choice == 3:
+    answer = math.tan(int(radian))
+    print(answer)
