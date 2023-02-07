@@ -1,14 +1,14 @@
 import math
 
-ax = -2
-ay = 4
-az = 9
+ax = 1
+ay = 2
+az = 3
 
 magnitude_a = math.sqrt(math.pow(ax, 2) + math.pow(ay, 2) + math.pow(az, 2))
 
-bx = 1
-by = 6
-bz = -3
+bx = 4
+by = 5
+bz = 6
 
 magnitude_b = math.sqrt(math.pow(bx, 2) + math.pow(by, 2) + math.pow(bz, 2))
 

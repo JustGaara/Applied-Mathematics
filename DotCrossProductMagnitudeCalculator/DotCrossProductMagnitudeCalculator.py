@@ -18,8 +18,8 @@ print("Magnitude of b (second vector) is", magnitude2)
 
 print()
 
-magnitude_dot = magnitude1 * magnitude2 * math.cos(int(angle))
-magnitude_cross = magnitude1 * magnitude2 * math.sin(int(angle))
+magnitude_dot = float(magnitude1) * float(magnitude2) * math.cos(float(angle)/(180/math.pi))
+magnitude_cross = float(magnitude1) * float(magnitude2) * math.sin(float(angle)/(180/math.pi))
 
 print("The result dot product magnitude is", magnitude_dot)
 print("The result cross product magnitude is", magnitude_cross)
