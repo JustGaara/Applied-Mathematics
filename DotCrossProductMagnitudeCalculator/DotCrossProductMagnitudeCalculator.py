@@ -10,8 +10,13 @@ y2 = input("What is the y for the second vector? ")
 
 angle = input ("What is the angle? ")
 
-magnitude1 = math.sqrt(math.pow(int(x1),2) + math.pow(int(y1),2))
-magnitude2 = math.sqrt(math.pow(int(x2),2) + math.pow(int(y2),2))
+magnitude1 = math.sqrt(math.pow(int(x1), 2) + math.pow(int(y1), 2))
+magnitude2 = math.sqrt(math.pow(int(x2), 2) + math.pow(int(y2), 2))
+
+print("Magnitude of a (first vector) is", magnitude1)
+print("Magnitude of b (second vector) is", magnitude2)
+
+print()
 
 magnitude_dot = magnitude1 * magnitude2 * math.cos(int(angle))
 magnitude_cross = magnitude1 * magnitude2 * math.sin(int(angle))
