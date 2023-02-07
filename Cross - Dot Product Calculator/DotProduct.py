@@ -1,7 +1,7 @@
 import math
 
-bool(repeat) = 1
-while (repeat == 1)
+repeat = "1"
+while (repeat == "1"):
     method = input("""Do you have the angle?
     1 - Yes
     2 - No
@@ -50,10 +50,8 @@ while (repeat == 1)
         1 for yes, 0 for no
         Choice = """)
         
-    else
+    else:
         print("Wrong input.")
         print()
         repeat = 1
-    
-    
     
