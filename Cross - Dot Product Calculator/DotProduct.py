@@ -1,7 +1,7 @@
 import math
 
 repeat = "1"
-while (repeat == "1"):
+while repeat == "1":
     method = input("""Do you have the angle?
     1 - Yes
     2 - No
@@ -23,7 +23,7 @@ while (repeat == "1"):
         dot_product = float(mag_a) * float(mag_b) * math.cos(float(angle))
     
         print("Magnitude of c = a.b =", dot_product)
-        
+
         print()
         repeat = input("""Would you like to continue?
         1 for yes, 0 for no
