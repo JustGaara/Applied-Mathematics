@@ -52,7 +52,7 @@ def Calculate():
                 calc_angle = math.acos(float(dot_product) / (float(mag_a) * float(mag_b)))
 
                 print("Magnitude of c = a.b =", dot_product)
-                print("The angle is", calc_angle)
+                print("The angle is", calc_angle, "radians and", (float(calc_angle)/(180/math.pi)), "degrees")
 
                 print()
                 repeat = input("""Would you like to continue?
@@ -114,7 +114,7 @@ def Calculate():
                 calc_angle = math.acos(float(dot_product) / (float(mag_a) * float(mag_b)))
 
                 print("Magnitude of c = a.b =", dot_product)
-                print("The angle is", calc_angle)
+                print("The angle is", calc_angle, "radians and", (float(calc_angle)/(180/math.pi)), "degrees")
 
                 print()
                 repeat = input("""Would you like to continue?

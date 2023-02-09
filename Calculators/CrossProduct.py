@@ -52,7 +52,7 @@ def Calculate():
             calc_angle = math.asin(float(magnitude_c) / (float(mag_a)*float(mag_b)))
 
             print("Magnitude of c = a x b =", magnitude_c)
-            print("Angle between a and b =", calc_angle)
+            print("Angle between a and b =", calc_angle, "radians and", (float(calc_angle)/(180/math.pi)), "degrees")
 
             print()
             repeat = input("""Would you like to continue?
