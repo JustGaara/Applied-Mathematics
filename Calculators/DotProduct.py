@@ -1,58 +1,105 @@
 import math
 
 def Calculate():
-    repeat = "1"
-    while repeat == "1":
-        method = input("""Do you have the angle?
-        1 - Yes
-        2 - No
+
+    dimension = input("""Is it 2D or 3D?
+        1 - 2D
+        2 - 3D
         Choice: """)
 
-        if method == "1":
-            ax = input("ax = ")
-            ay = input("ay = ")
-            bx = input("bx = ")
-            by = input("by = ")
-            angle = input("angle = ")
+    if dimension == "1":
+        repeat = "1"
+        while repeat == "1":
+            method = input("""Do you have the angle?
+            1 - Yes
+            2 - No
+            Choice: """)
 
-            mag_a = math.sqrt(math.pow(float(ax), 2) + math.pow(float(ay), 2))
-            mag_b = math.sqrt(math.pow(float(bx), 2) + math.pow(float(by), 2))
+            if method == "1":
+                ax = input("ax = ")
+                ay = input("ay = ")
+                bx = input("bx = ")
+                by = input("by = ")
+                angle = input("angle = ")
 
-            print("Magnitude of a =", mag_a)
-            print("Magnitude of b =", mag_b)
+                mag_a = math.sqrt(math.pow(float(ax), 2) + math.pow(float(ay), 2))
+                mag_b = math.sqrt(math.pow(float(bx), 2) + math.pow(float(by), 2))
 
-            dot_product = float(mag_a) * float(mag_b) * math.cos(float(angle))
+                print("Magnitude of a =", mag_a)
+                print("Magnitude of b =", mag_b)
 
-            print("Magnitude of c = a.b =", dot_product)
+                dot_product = float(mag_a) * float(mag_b) * math.cos(float(angle))
 
-            print()
-            repeat = input("""Would you like to continue?
-            1 for yes, 0 for no
-            Choice = """)
+                print("Magnitude of c = a.b =", dot_product)
 
-        elif method == "2":
-            ax = input("ax = ")
-            ay = input("ay = ")
-            bx = input("bx = ")
-            by = input("by = ")
+                print()
+                repeat = input("""Would you like to continue?
+                1 for yes, 0 for no
+                Choice = """)
 
-            mag_a = math.sqrt(math.pow(float(ax), 2) + math.pow(float(ay), 2))
-            mag_b = math.sqrt(math.pow(float(bx), 2) + math.pow(float(by), 2))
+            elif method == "2":
+                ax = input("ax = ")
+                ay = input("ay = ")
+                bx = input("bx = ")
+                by = input("by = ")
 
-            print("Magnitude of a =", mag_a)
-            print("Magnitude of b =", mag_b)
+                mag_a = math.sqrt(math.pow(float(ax), 2) + math.pow(float(ay), 2))
+                mag_b = math.sqrt(math.pow(float(bx), 2) + math.pow(float(by), 2))
 
-            dot_product = (float(ax) * float(bx)) + (float(ay) * float(by))
+                print("Magnitude of a =", mag_a)
+                print("Magnitude of b =", mag_b)
 
-            print("Magnitude of c = a.b =", dot_product)
+                dot_product = (float(ax) * float(bx)) + (float(ay) * float(by))
 
-            print()
-            repeat = input("""Would you like to continue?
-            1 for yes, 0 for no
-            Choice = """)
+                print("Magnitude of c = a.b =", dot_product)
 
-        else:
-            print("Wrong input.")
-            print()
-            repeat = 1
-    
+                print()
+                repeat = input("""Would you like to continue?
+                1 for yes, 0 for no
+                Choice = """)
+
+            else:
+                print("Wrong input.")
+                print()
+                repeat = 1
+    elif dimension == "2":
+        repeat = "1"
+        while repeat == "1":
+
+            method = input("""Do you have the angle?
+                        1 - Yes
+                        2 - No
+                        Choice: """)
+
+            if method == "1":
+                ax = input("ax = ")
+                ay = input("ay = ")
+                az = input("az = ")
+                bx = input("bx = ")
+                by = input("by = ")
+                bz = input("bz = ")
+
+                dot_product = (float(ax) * float(bx)) + (float(ay) * float(by)) + (float(az) * float(bz))
+
+                print("Magnitude of c = a.b =", dot_product)
+
+                print()
+                repeat = input("""Would you like to continue?
+                                1 for yes, 0 for no
+                                Choice = """)
+
+            elif method == "2":
+                ax = input("ax = ")
+                ay = input("ay = ")
+                az = input("az = ")
+                bx = input("bx = ")
+                by = input("by = ")
+                bz = input("bz = ")
+                angle = input("angle = ")
+
+                mag_a = math.sqrt(math.pow(float(ax), 2) + math.pow(float(ay), 2) + math.pow(float(az), 2))
+                mag_b = math.sqrt(math.pow(float(bx), 2) + math.pow(float(by), 2) + math.pow(float(bz), 2))
+
+                dot_product = float(mag_a) * float(mag_b) * math.cos(float(angle))
+
+                print("Magnitude of c = a.b =", dot_product)
