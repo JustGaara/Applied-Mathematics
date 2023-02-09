@@ -88,10 +88,8 @@ def Calculate():
                 print("Magnitude of b =", mag_b)
 
                 dot_product = float(mag_a) * float(mag_b) * math.cos(float(angle))
-                calc_angle = math.acos(float(dot_product) / (float(mag_a) * float(mag_b)))
 
                 print("Magnitude of c = a.b =", dot_product)
-                print("The angle is", calc_angle)
 
                 print()
                 repeat = input("""Would you like to continue?
@@ -106,9 +104,17 @@ def Calculate():
                 by = input("by = ")
                 bz = input("bz = ")
 
+                mag_a = math.sqrt(math.pow(float(ax), 2) + math.pow(float(ay), 2) + math.pow(float(az), 2))
+                mag_b = math.sqrt(math.pow(float(bx), 2) + math.pow(float(by), 2) + math.pow(float(bz), 2))
+
+                print("Magnitude of a =", mag_a)
+                print("Magnitude of b =", mag_b)
+
                 dot_product = (float(ax) * float(bx)) + (float(ay) * float(by)) + (float(az) * float(bz))
+                calc_angle = math.acos(float(dot_product) / (float(mag_a) * float(mag_b)))
 
                 print("Magnitude of c = a.b =", dot_product)
+                print("The angle is", calc_angle)
 
                 print()
                 repeat = input("""Would you like to continue?
